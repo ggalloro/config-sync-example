@@ -11,7 +11,6 @@ spec:
     namespaces:
       - "application1"
       - "application2"
-      - "default"
   parameters:
     repos:
       - "europe-docker.pkg.dev/galloro-demos/trusted"

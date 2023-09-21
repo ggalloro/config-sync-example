@@ -10,4 +10,3 @@ spec:
     namespaces:
       - "application1"
       - "application2"
-      - "default"
