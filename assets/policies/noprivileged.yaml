@@ -8,5 +8,6 @@ spec:
       - apiGroups: [""]
         kinds: ["Pod"]
     namespaces:
-      - "application1"
-      - "application2"
+      - "boutique"
+      - "finance"
+      - "default"

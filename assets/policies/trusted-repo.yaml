@@ -9,8 +9,9 @@ spec:
       - apiGroups: [""]
         kinds: ["Pod"]
     namespaces:
-      - "application1"
-      - "application2"
+      - "boutique"
+      - "finance"
+      - "default"
   parameters:
     repos:
       - "europe-docker.pkg.dev/galloro-demos/trusted"
