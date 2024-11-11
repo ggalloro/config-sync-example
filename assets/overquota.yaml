@@ -14,4 +14,4 @@ spec:
         memory: "2Gi"
     args:
     - -cpus
-    - "0.5"
+    - "1"
