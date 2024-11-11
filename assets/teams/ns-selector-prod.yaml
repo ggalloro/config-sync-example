@@ -3,7 +3,7 @@ apiVersion: configmanagement.gke.io/v1
 metadata:
   name: prod-selector
 spec:
-mode: dynamic  
-selector:
+  mode: dynamic  
+  selector:
     matchLabels:
       env: production
