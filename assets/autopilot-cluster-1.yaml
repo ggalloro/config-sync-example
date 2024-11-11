@@ -1,0 +1,31 @@
+applySpecVersion: 1
+spec:
+  cluster: null
+  configSync:
+    enabled: false
+    gcpServiceAccountEmail: null
+    httpsProxy: null
+    metricsGcpServiceAccountEmail: null
+    policyDir: platform
+    preventDrift: false
+    secretType: none
+    sourceFormat: unstructured
+    sourceType: git
+    syncBranch: main
+    syncRepo: https://github.com/ggalloro/acm-example/
+    syncRev: HEAD
+    syncWait: 15
+  hierarchyController:
+    enableHierarchicalResourceQuota: false
+    enablePodTreeLabels: false
+    enabled: false
+  policyController:
+    auditIntervalSeconds: 60
+    enabled: false
+    exemptableNamespaces: []
+    logDeniesEnabled: false
+    mutationEnabled: false
+    referentialRulesEnabled: false
+    templateLibraryInstalled: true
+  upgrades: manual
+  version: null

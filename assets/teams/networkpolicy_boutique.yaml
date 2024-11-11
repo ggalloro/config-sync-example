@@ -1,0 +1,21 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: boutique-policy
+  annotations:
+    configmanagement.gke.io/namespace-selector: boutique-scope
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector: {}
+    - namespaceSelector:
+        matchLabels:
+          kubernetes.io/metadata.name: gateways
+  egress:
+  - to:
+    - namespaceSelector: {}
+    - podSelector: {}
